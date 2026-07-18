@@ -1,0 +1,24 @@
+# Compiled binary
+/bin/
+/mihatch
+/dist/
+/out=
+
+# Local runtime state (never commit)
+/.mihatch/
+
+# Go workspace / test artifacts
+*.test
+*.out
+coverage.txt
+coverage.html
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local-only scratch
+.scratch/

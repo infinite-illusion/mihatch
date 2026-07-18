@@ -1,0 +1,24 @@
+# Example source config for `mihatch init --config`.
+#
+# This is a plain Mihomo YAML with NO real nodes, secrets, or subscription URLs.
+# MiHatch will still apply its isolation overrides on top of it (mixed-port 17890,
+# no TUN, no controllers, no LAN, etc.), so the values below are a starting point.
+#
+# Replace the proxies with your own before use. Do not commit real credentials.
+
+mixed-port: 7890
+mode: rule
+log-level: info
+
+proxies:
+  - name: example-direct
+    type: direct
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - example-direct
+
+rules:
+  - MATCH,PROXY
