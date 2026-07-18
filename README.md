@@ -32,7 +32,7 @@ No `sudo`, no admin rights, no system DNS/route/TUN changes.
 ## Install
 
 ```bash
-git clone <this repo> && cd mihatch
+git clone https://github.com/infinite-illusion/mihatch.git && cd mihatch
 just build                 # or: go build -o mihatch ./cmd/mihatch
 # optionally: mv mihatch /usr/local/bin/
 ```
